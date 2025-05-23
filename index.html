@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cofre do Toin</title>
+  <script>
+    function checkPassword() {
+      var senha = prompt("Qual é a senha, guerreiro?");
+      if (senha === "toin123") {
+        document.getElementById("conteudo").style.display = "block";
+      } else {
+        alert("Senha errada!");
+      }
+    }
+  </script>
+</head>
+<body onload="checkPassword()">
+  <div id="conteudo" style="display:none;">
+    <h1>🎉 Cofre do Toin 🎉</h1>
+    <p>Aqui vai ficar teus segredos, textos, planos doidão e etc.</p>
+  </div>
+</body>
+</html>
+
