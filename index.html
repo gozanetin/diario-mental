@@ -3,12 +3,20 @@
 <head>
   <title>Trincheiras da Mente</title>
   <script>
-    function checkPassword() {
-      var senha = prompt("Qual é a senha, guerreiro?");
-      if (senha === "firufiru2406") {
+    async function checkPassword() {
+      const hashCerto = "3459e2a3ec4b5f9a73267fa20128be9f999ed5be775488b4ed5f2dff6730ef28"; // hash da senha
+
+      let tentativa = prompt("Qual é a senha, guerreiro?");
+      const encoder = new TextEncoder();
+      const data = encoder.encode(tentativa);
+      const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+
+      if (hashHex === hashCerto) {
         document.getElementById("conteudo").style.display = "block";
       } else {
-        alert("Senha errada!");
+        alert("errou! vaza fi");
       }
     }
   </script>
@@ -17,7 +25,6 @@
   <div id="conteudo" style="display:none;">
     <h1>🧠 trincheiras da mente.</h1>
     <p>Bem-vindo ao esconderijo mental. Escolha um setor do vórtice para entrar:</p>
-
     <h2>🌪 Setor do Vórtice</h2>
     <ul>
       <li><a href="vortice.html">🌀 Vórtice Principal</a></li>
@@ -25,4 +32,3 @@
   </div>
 </body>
 </html>
-
