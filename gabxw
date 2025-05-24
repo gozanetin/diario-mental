@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>🌀 Liquidificador de Mente</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      font-family: monospace;
+      padding: 30px;
+    }
+
+    h1, h2 {
+      color: #ff6ec7;
+    }
+
+    h3 {
+      white-space: pre-line;
+      line-height: 1.6;
+    }
+
+    .voltar {
+      margin-top: 40px;
+      display: inline-block;
+      color: #7fffd4;
+      text-decoration: none;
+    }
+
+    del {
+      color: #ff4f4f;
+    }
+
+    strong {
+      color: #ffa500;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="voltar" href="index.html">⬅️ Voltar para as Trincheiras</a>
+  <h1> mozin </h1>
+
+  <h3>
+às vezes muitas coisas acontecem ao mesmo tempo e parece que a cabeça vai explodir.  
+por isso eu tô aqui com você.  
+pode me chamar de seu melhor amigo: <strong>(vício)</strong>
+
+me alimente, garoto.  
+desconte tudo em mim como um abraço maldoso.  
+sempre estarei lá — não exatamente pra te fazer bem,  
+mas pra te dar uma falsa ilusão de felicidade.
+
+fume, beba, desconte suas dores em mim.  
+isso só vai te fazer babaca, mas e daí?  
